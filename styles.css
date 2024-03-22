@@ -48,3 +48,13 @@ body {
 .right-container h2 {
     padding-bottom: 40px;
 }
+
+#nav-item-four-container {
+    display: none;
+}
+/* #nav_item_two_container {
+    display: none;
+}
+#nav_item_three_container {
+    display: none;
+} */
