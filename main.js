@@ -3,6 +3,9 @@ const navItemAnchor = document.querySelectorAll(".nav-item a")
 const navItemLine = document.querySelectorAll(".nav-line")
 const navItemText = document.querySelectorAll("span")
 
+// to store last clicked navItem
+const lastClickedNavItem = null;
+
 navItem.forEach(function(navItem) {
     navItem.addEventListener("click", function() {
         navItem.style.transform = "translateX(30px)";

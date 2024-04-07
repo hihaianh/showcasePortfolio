@@ -1,5 +1,6 @@
 body {
-    background-color: WHITE;
+    background: rgb(199,109,242);
+    background: radial-gradient(circle, rgba(199,109,242,0.7413559173669468) 0%, rgba(0,17,83,1) 100%);
 }
 
 .body-container {
@@ -44,7 +45,7 @@ body {
 
 .nav-item a {
     text-decoration: none;
-    color: grey;
+    color: #a3a0a0;
     display: inline-block;
     transition: transform 0.3s ease;
     margin-right: 30px;
@@ -56,7 +57,7 @@ body {
     width: 30px;
     height: 2px;
     margin-right: 10px;
-    background-color: purple;
+    background-color: #a3a0a0;
 }
 
 .nav-item a:hover {
@@ -69,6 +70,10 @@ body {
     justify-content: center;
     list-style-type: none;
     padding-top: 30px;
+}
+
+.fa-brands:hover {
+    color: blueviolet !important;
 }
 
 .right-container {
