@@ -1,6 +1,7 @@
 body {
     background: rgb(199,109,242);
     background: radial-gradient(circle, rgba(199,109,242,0.7413559173669468) 0%, rgba(0,17,83,1) 100%);
+    color: white;
 }
 
 .body-container {
@@ -40,7 +41,7 @@ body {
 
 .left-container ul li {
     padding: 16px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .nav-item a {
@@ -73,7 +74,7 @@ body {
 }
 
 .fa-brands:hover {
-    color: blueviolet !important;
+    color: rgb(193, 149, 235) !important;
 }
 
 .right-container {
@@ -96,6 +97,25 @@ max-height: 100%; */
 
 .right-container p {
     padding-bottom: 85px;
+}
+
+.project-box {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.project-box:hover {
+    transition: 0.3s ease-in;
+    background-color: rgba(235, 199, 252, 0.1);
+}
+
+.project-badge {
+    /* background-color: rgb(49, 36, 133); */
+    background-color: #744E87;
+    padding: 8px 15px;
+    color: white;
+    text-align: center;
+    border-radius: 30px;    
 }
 
 
