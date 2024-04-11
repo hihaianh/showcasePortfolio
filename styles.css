@@ -1,7 +1,7 @@
 body {
     background: rgb(199,109,242);
     background: radial-gradient(circle, rgba(199,109,242,0.7413559173669468) 0%, rgba(0,17,83,1) 100%);
-    color: white;
+    color: #e6e6e6;
 }
 
 .body-container {
@@ -35,7 +35,6 @@ body {
     padding-top: 25px;
     font-family: "Nunito", sans-serif;
     font-weight: bold;
-    color: grey;
     text-align: left;
 }
 
@@ -46,7 +45,7 @@ body {
 
 .nav-item a {
     text-decoration: none;
-    color: #a3a0a0;
+    color: white;
     display: inline-block;
     transition: transform 0.3s ease;
     margin-right: 30px;
@@ -58,7 +57,7 @@ body {
     width: 30px;
     height: 2px;
     margin-right: 10px;
-    background-color: #a3a0a0;
+    background-color: rgb(49, 36, 133);
 }
 
 .nav-item a:hover {
@@ -89,15 +88,23 @@ body {
 .right-container h2 {
     margin: 0;
     font-family: "Roboto", sans-serif;
+    color: white;
 }
 
-.right-container p {
-    padding-bottom: 85px;
+.right-container h3 {
+    margin: 0;
+    color: white;
+}
+
+.default-container {
+    padding: 0;
+    margin: 0;
 }
 
 .project-box {
     padding: 20px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .project-box:hover {
@@ -108,6 +115,7 @@ body {
 .project-badge {
     /* background-color: rgb(49, 36, 133); */
     background-color: #744E87;
+    /* background-color: #c195eb; */
     padding: 8px 15px;
     color: #ead5f5;
     text-align: center;
@@ -123,9 +131,57 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 40px 0px;
+    margin: 40px -10px;
 }
 
 .fa-solid {
     padding: 15px 15px 10px 0px;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease;
+    padding: 1.845rem;
+    position: relative;
+    border-left: 4px solid #0acafa;
+}
+
+.text-box::before {
+    position: absolute;
+    content: "";
+    border-radius: 1000px;
+    width: 20px;
+    height:20px;
+    background-color:white;
+    z-index: 1;
+    top: 30px;
+    left: -12px;
+}
+
+.text-box:hover {
+    background-color: rgba(235, 199, 252, 0.1);
+}
+
+.date-job {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 100%;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.exp-title {
+    width: 60%;
+}
+
+.divider {
+    color: #d9bef4;
+    padding: 0px 10px;
+}
+
+footer i {
+    display: flex;
+    justify-content: flex-end;
 }
