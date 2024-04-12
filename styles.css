@@ -131,7 +131,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 40px -10px;
+    margin: 40px 30px;
 }
 
 .fa-solid {
@@ -144,6 +144,11 @@ body {
     transition: 0.3s ease;
     padding: 1.845rem;
     position: relative;
+    /* border-left: 4px solid #0acafa; */
+}
+
+
+#default-container {
     border-left: 4px solid #0acafa;
 }
 
@@ -157,6 +162,7 @@ body {
     z-index: 1;
     top: 30px;
     left: -12px;
+    border: 2px solid black;
 }
 
 .text-box:hover {
@@ -184,4 +190,5 @@ body {
 footer i {
     display: flex;
     justify-content: flex-end;
+    margin: 0px -10px;
 }
