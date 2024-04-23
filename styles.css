@@ -96,15 +96,33 @@ body {
     color: white;
 }
 
-.default-container {
+/* .default-container {
     padding: 0;
     margin: 0;
+}
+#default-container {
+    border-left: 1px dashed #0acafa;
+
+} */
+
+.about-text {
+    font-size: 15px;
 }
 
 .project-box {
     padding: 20px;
     border-radius: 10px;
     cursor: pointer;
+    display: flex;
+}
+
+.header-and-text-project {
+    display: block;
+    padding-left: 15px;
+}
+
+.project-box p {
+    padding-bottom: 15px;
 }
 
 .project-box:hover {
@@ -119,7 +137,7 @@ body {
     padding: 8px 15px;
     color: #ead5f5;
     text-align: center;
-    border-radius: 30px;    
+    border-radius: 30px;   
 }
 
 .exp-header {
@@ -131,7 +149,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 40px 30px;
+    margin: 40px 28px;
+    padding-top: 80px;
 }
 
 .fa-solid {
@@ -147,23 +166,17 @@ body {
     /* border-left: 4px solid #0acafa; */
 }
 
-
-#default-container {
-    border-left: 4px solid #0acafa;
-}
-
-.text-box::before {
+/* .text-box::before {
     position: absolute;
     content: "";
-    border-radius: 1000px;
-    width: 20px;
-    height:20px;
-    background-color:white;
+    border-radius: 100px;
+    width: 10px;
+    height:10px;
     z-index: 1;
     top: 30px;
     left: -12px;
     border: 2px solid black;
-}
+} */
 
 .text-box:hover {
     background-color: rgba(235, 199, 252, 0.1);
@@ -188,7 +201,13 @@ body {
 }
 
 footer i {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0px -10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 50px 25px;
+}
+
+.downsize {
+    width: 150px;
+    height: 90px;
 }
