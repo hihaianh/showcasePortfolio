@@ -239,6 +239,10 @@ body {
     background-color: navy;
 }
 
+.hidden {
+    display: none;
+}
+
 footer i {
     position: fixed;
     bottom: 0;
