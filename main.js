@@ -24,6 +24,8 @@ const closePopUp = document.querySelector(".img-popup i");
 
 certificatePopUp.forEach(function(certificatePopUp) {
     certificatePopUp.addEventListener("click", function() {
-        certificateImg.classlist.toggle("hidden")
+        certificateImg.forEach(function(img) {
+            img.classList.toggle("hidden");
+        })
     })
 })
