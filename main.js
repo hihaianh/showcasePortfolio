@@ -16,18 +16,14 @@ navItem.forEach(function(navItem) {
 })
 
 
-//once images icon is clicked, pop-up showing certificate/img/pdf will show
+//toggle img popup when clicking 'view certificates'
 
-const certificatePopUp = document.querySelector(".certificate-show");
-const certificateImg = document.querySelector(".img-popup");
+const certificatePopUp = document.querySelectorAll(".certificate-show");
+const certificateImg = document.querySelectorAll(".img-popup");
 const closePopUp = document.querySelector(".img-popup i");
 
-certificatePopUp.addEventListener("click", function() {
-    certificateImg.style.display = "block";
+certificatePopUp.forEach(function(certificatePopUp) {
+    certificatePopUp.addEventListener("click", function() {
+        certificateImg.classlist.toggle("hidden")
+    })
 })
-
-closePopUp.addEventListener("click", function() {
-    certificateImg.style.display = "none";
-})
-
-//if user clicks outside the popup, close the popup
